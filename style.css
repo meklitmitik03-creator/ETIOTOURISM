@@ -1,0 +1,146 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+/* SIDEBAR */
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:220px;
+height:100%;
+background:#020617;
+padding:20px;
+transition:0.3s;
+}
+
+.sidebar.hide{
+left:-220px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:10px;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1e293b;
+}
+
+/* MENU BUTTON */
+.menu-btn{
+position:fixed;
+top:10px;
+left:10px;
+background:#facc15;
+padding:10px;
+cursor:pointer;
+z-index:1000;
+}
+
+/* MAIN */
+.main{
+margin-left:240px;
+}
+
+/* HERO SLIDESHOW */
+.home-hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+animation:slide 20s infinite;
+background-size:cover;
+background-position:center;
+}
+
+@keyframes slide{
+0%{background-image:url("https://images.unsplash.com/flagged/photo-1572644973628-e9be84915d59?w=500");}
+25%{background-image:url("https://plus.unsplash.com/premium_photo-1674591172081-87cf2f464f90?w=500");}
+50%{background-image:url("https://images.unsplash.com/photo-1634029878815-1bb307302471?w=500");}
+75%{background-image:url("https://images.unsplash.com/photo-1608634193723-1865aa4416ce?w=500");}
+100%{background-image:url("https://images.unsplash.com/photo-1573403092240-26095e118918?w=500");}
+}
+
+/* HERO BOX */
+.hero-box{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:15px;
+text-align:center;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+text-decoration:none;
+color:white;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+text-align:center;
+padding:10px;
+}
+
+.card button{
+margin:10px;
+padding:10px;
+background:#facc15;
+border:none;
+cursor:pointer;
+}
+
+/* CHAT */
+.chat-toggle{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#facc15;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.chat-box{
+position:fixed;
+bottom:80px;
+right:20px;
+width:250px;
+background:#1e293b;
+border-radius:10px;
+display:none;
+flex-direction:column;
+}
+
+.chat-header{
+background:#facc15;
+padding:10px;
+text-align:center;
+cursor:pointer;
+}
+
+.chat-body{
+height:150px;
+overflow-y:auto;
+padding:10px;
+}
