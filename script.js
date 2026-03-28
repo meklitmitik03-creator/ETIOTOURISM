@@ -16,3 +16,13 @@ function sendMessage(){
 
   document.getElementById("chatInput").value="";
 }
+
+function toggleSidebar(){
+  document.querySelector(".sidebar").classList.toggle("hide");
+  document.querySelector(".main").classList.toggle("full");
+}
+
+function toggleChat(){
+  let chat = document.getElementById("chatBox");
+  chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+}
