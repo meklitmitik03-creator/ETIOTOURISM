@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Transportation</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+<div class="sidebar">
+  <h2>Ethioturism</h2>
+
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="culture.html"><i class="fas fa-globe"></i> Culture</a>
+  <a href="history.html"><i class="fas fa-landmark"></i> History</a>
+  <a href="land_animal.html"><i class="fas fa-paw"></i> Land & Animals</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- HERO -->
+<div class="home-hero transport-bg">
+  <div class="hero-box">
+    <h1>Transportation</h1>
+    <p>Choose and explore transport options</p>
+  </div>
+</div>
+
+<!-- CARDS -->
+<div class="section">
+
+<div class="cards">
+
+<!-- CARD -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1725300554935-51da71f0a9dd?w=500">
+<h3>Ride Taxi</h3>
+
+<button onclick="toggleDetail(this)">Explore</button>
+
+<div class="card-detail">
+<p>Fast city rides in Addis Ababa</p>
+<p>📞 0912345678</p>
+</div>
+</div>
+
+<!-- CARD -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1725300554935-51da71f0a9dd?w=500">
+<h3>Yango</h3>
+
+<button onclick="toggleDetail(this)">Explore</button>
+
+<div class="card-detail">
+<p>App-based taxi service</p>
+<p>📞 0923456789</p>
+</div>
+</div>
+
+<!-- ADD MORE SAME STYLE (you can copy) -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CHAT -->
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header" onclick="toggleChat()">AI Assistant ✖</div>
+  <div class="chat-body" id="chatBody"></div>
+  <input type="text" id="chatInput" placeholder="Ask...">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
