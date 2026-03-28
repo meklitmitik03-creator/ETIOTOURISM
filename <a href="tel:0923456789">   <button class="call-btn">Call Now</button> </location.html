@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Location & Directions</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- MAP LIBRARY -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+<div class="sidebar">
+  <h2>Ethioturism</h2>
+
+  <a href="index.html">Home</a>
+  <a href="culture.html">Culture</a>
+  <a href="history.html">History</a>
+  <a href="land_animal.html">Land & Animals</a>
+  <a href="transport.html">Transport</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- HERO -->
+<div class="hero" style="background:url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200'); background-size:cover;">
+<h1>Find Your Way</h1>
+</div>
+
+<!-- SEARCH BOX -->
+<div class="section">
+
+<h2>Get Directions</h2>
+
+<input type="text" id="destination" placeholder="Enter destination (e.g. Addis Ababa)">
+<button onclick="getRoute()">Find Route</button>
+
+<div id="map"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
