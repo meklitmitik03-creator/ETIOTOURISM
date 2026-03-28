@@ -283,3 +283,38 @@ margin-left:0;
 }
 
 }
+/* TRANSPORT BACKGROUND (SLIDESHOW) */
+
+.transport-bg{
+animation:transportSlide 12s infinite;
+background-size:cover;
+background-position:center;
+}
+
+@keyframes transportSlide{
+0%{background-image:url("https://images.unsplash.com/photo-1771535348431-53133fd66e5b?w=1200");}
+50%{background-image:url("https://images.unsplash.com/photo-1725300554935-51da71f0a9dd?w=1200");}
+100%{background-image:url("https://images.unsplash.com/photo-1771535348431-53133fd66e5b?w=1200");}
+}
+
+/* EXPANDABLE CARD */
+
+.card-detail{
+display:none;
+padding:10px;
+background:#334155;
+}
+
+/* SHOW DETAIL */
+.card.active .card-detail{
+display:block;
+}
+
+/* BUTTON */
+.card button{
+margin:10px;
+padding:10px;
+background:#facc15;
+border:none;
+cursor:pointer;
+}
