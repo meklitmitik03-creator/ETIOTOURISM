@@ -21,6 +21,19 @@ function toggleSidebar(){
   document.querySelector(".sidebar").classList.toggle("hide");
   document.querySelector(".main").classList.toggle("full");
 }
+function toggleDetail(btn){
+
+  let currentCard = btn.parentElement;
+  let isOpen = currentCard.classList.contains("active");
+
+  document.querySelectorAll(".card").forEach(card => {
+    card.classList.remove("active");
+  });
+
+  if(!isOpen){
+    currentCard.classList.add("active");
+  }
+}
 
 function toggleChat(){
   let chat = document.getElementById("chatBox");
